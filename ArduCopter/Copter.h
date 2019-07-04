@@ -233,6 +233,7 @@ public:
     friend class ModeStabilize_Heli;
     friend class ModeThrow;
     friend class ModeZigZag;
+    friend class ModeStar;
 
     Copter(void);
 
@@ -942,6 +943,9 @@ private:
 #endif
 #if MODE_ZIGZAG_ENABLED == ENABLED
     ModeZigZag mode_zigzag;
+#endif
+#if MODE_STAR_ENABLED == ENABLED
+    ModeStar mode_star;
 #endif
 
     // mode.cpp

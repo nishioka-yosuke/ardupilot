@@ -158,6 +158,11 @@ Mode *Copter::mode_from_mode_num(const uint8_t mode)
             ret = &mode_zigzag;
             break;
 #endif
+#if MODE_STAR_ENABLED == ENABLED
+        case STAR:
+            ret = &mode_star;
+            break;
+#endif
 
         default:
             break;
